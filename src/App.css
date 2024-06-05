@@ -1,0 +1,132 @@
+/* some of the CSS below not used due to original image and text display being replaced with a canvas */
+
+#root {
+  --background: linear-gradient(
+    to right,
+    hsl(182, 64%, 34%),
+    hsl(182, 80%, 47%)
+  );
+  --primary: white;
+  --text2: #374151;
+}
+
+#root,
+button {
+  color: var(--primary);
+}
+.header,
+button {
+  background: var(--background);
+}
+
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+button,
+label,
+input {
+  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header img {
+  width: 35px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 1.3rem;
+  letter-spacing: -0.5px;
+  margin-right: auto;
+}
+
+.header span {
+  margin-right: 50px;
+  font-size: 0.75rem;
+}
+
+main {
+  /* display: grid;
+  grid-template: 100% 100%; */
+  margin: 50px 50px;
+  /* color: var(--text1); */
+}
+input,
+button {
+  border-radius: 5px;
+}
+
+.form {
+  display: grid;
+  grid-template: 50% 50%/1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+label {
+  font-size: 0.95rem;
+  color: var(--text2);
+}
+
+input {
+  height: 35px;
+  width: 100%;
+  font-size: 1rem;
+  text-indent: 10px;
+  margin-top: 3px;
+  border: 1px solid #d1d5db;
+}
+
+button {
+  grid-column: 1/-1;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  margin: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 1000px;
+  max-height: 700px;
+}
+
+.canvas {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
