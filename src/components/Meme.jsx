@@ -78,7 +78,7 @@ export default function Meme() {
     }
   }
 
-  function newImage(event) {
+  function newImage() {
     const ranNum = Math.floor(Math.random() * 100);
     console.log(`width: ${allMemes[ranNum].width}
     height: ${allMemes[ranNum].height}`);
